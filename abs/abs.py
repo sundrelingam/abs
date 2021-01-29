@@ -1,4 +1,4 @@
-times = [0.1, 0.2]
+times = [1, 0.5]
 exercises = ['KTE Crunch', 
              'Heaven Raises', 
              'Starfish Crunch', 

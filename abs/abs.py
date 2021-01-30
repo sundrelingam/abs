@@ -17,9 +17,9 @@ import random
 import time
 
 def start():
-    time_remaining = 10
+    time_remaining = 7
     
-    while time_remaining > 5:
+    while time_remaining > 3.5:
         t = random.choice(times) * 60
         
         print(random.choice(exercises), ' for ', str(t), ' seconds')
@@ -30,7 +30,7 @@ def start():
     print('30 second rest')
     time.sleep(30)
     
-    while time_remaining > 5:
+    while time_remaining >= 0:
         t = random.choice(times) * 60
         
         print(random.choice(exercises), ' for ', str(t), ' seconds')

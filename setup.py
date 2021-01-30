@@ -4,14 +4,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="example-pkg-YOUR-USERNAME-HERE",
+    name="abs-sundrelingam",
     version="0.0.1",
     author="Vaakesan Sundrelingam",
     author_email="vaakesan.sundrelingam@gmail.com",
     description="Grab bag ab workout.",
-    long_description=long_description,
+    long_description="Uses a list of your favourite ab exercises in a randomized, timed workout.",
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/sundrelingam/abs",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

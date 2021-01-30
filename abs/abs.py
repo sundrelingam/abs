@@ -24,6 +24,7 @@ def start():
         
         print(random.choice(exercises), ' for ', str(t), ' seconds')
         time.sleep(t)
+        print('\a') # make alert noise
         
         time_remaining -= t / 60
         
@@ -35,6 +36,7 @@ def start():
         
         print(random.choice(exercises), ' for ', str(t), ' seconds')
         time.sleep(t)
+        print('\a')
         
         time_remaining -= t / 60
         

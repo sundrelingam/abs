@@ -10,7 +10,7 @@ Type the following command into your terminal or command prompt.
 python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps abs-sundrelingam
 ```
 
-**Note that the python3 environment variable should be set and point to the correct python 3 installation.**
+*Note that the python3 environment variable should be set and point to the correct python 3 installation.*
 
 ## `start()` a Workout
 

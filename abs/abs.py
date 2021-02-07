@@ -18,26 +18,39 @@ import time
 
 def start():
     time_remaining = 7
+    last_exercise = ""
     
     while time_remaining > 3.5:
         t = random.choice(times) * 60
+        x = random.choice(exercises)
         
-        print(random.choice(exercises), ' for ', str(t), ' seconds')
-        time.sleep(t)
-        print('\a') # make alert noise
-        
-        time_remaining -= t / 60
+        if x == last_exercise:
+            pass
+        else:
+            last_exercise = x
+            
+            print(x, ' for ', str(t), ' seconds')
+            time.sleep(t)
+            print('\a') # make alert noise
+            
+            time_remaining -= t / 60
         
     print('30 second rest')
     time.sleep(30)
     
     while time_remaining >= 0:
         t = random.choice(times) * 60
+        x = random.choice(exercises)
         
-        print(random.choice(exercises), ' for ', str(t), ' seconds')
-        time.sleep(t)
-        print('\a')
-        
-        time_remaining -= t / 60
+        if x == last_exercise:
+            pass
+        else:
+            last_exercise = x
+            
+            print(x, ' for ', str(t), ' seconds')
+            time.sleep(t)
+            print('\a') # make alert noise
+            
+            time_remaining -= t / 60
         
     print('Ok done. Nice.')
